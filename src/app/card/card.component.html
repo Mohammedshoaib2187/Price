@@ -1,44 +1,50 @@
-<div class="card mb-5 mb-lg-0">
-    <div class="card-body">
-      <h5 class="card-title text-muted text-uppercase text-center">{{myData.planTitle}}</h5>
-      <h6 class="card-price text-center">${{myData.price}}<span class="period">/{{myData.period}}</span></h6>
-      <hr>
-      <ul class="fa-ul">
-        <li [ngClass]="{'text-muted':!myData.user.active}">
-          <span class="fa-li">
-          <i [ngClass]="{'fa-times':!myData.user.active,'fa-check':myData.user.active,fa:true}"></i>
-        </span>{{myData.user.userAllowed}}</li>
-        <li [ngClass]="{'text-muted':!myData.storage.active}">
-          <span class="fa-li">
-          <i [ngClass]="{'fa-times':!myData.storage.active,'fa-check':myData.storage.active,fa:true}"></i>
-        </span>{{myData.storage.size}}GB Storage</li>
-        <li [ngClass]="{'text-muted':!myData.publicProject.active}">
-          <span class="fa-li">
-          <i [ngClass]="{'fa-times':!myData.publicProject.active,'fa-check':myData.publicProject.active,fa:true}"></i>
-        </span>{{myData.publicProject.publicProjectAllowed}} Public Projects</li>
-        <li [ngClass]="{'text-muted':!myData.communityAccess.active}">
-          <span class="fa-li">
-          <i [ngClass]="{'fa-times':!myData.communityAccess.active,'fa-check':myData.communityAccess.active,fa:true}"></i>
-          </span>{{myData.communityAccess.communityAccess}}</li>
-        <li [ngClass]="{'text-muted':!myData.UnlimitedPrivateProject.active}" >
-          <span class="fa-li">
-          <i [ngClass]="{'fa-times':!myData.UnlimitedPrivateProject.active,'fa-check':myData.UnlimitedPrivateProject.active,fa:true}"></i>
-        </span>{{myData.UnlimitedPrivateProject.PPAllowed}} Private Projects</li>
-        <li [ngClass]="{'text-muted':!myData.phoneSupprt.active}">
-          <span class="fa-li">
-          <i [ngClass]="{'fa-times':!myData.phoneSupprt.active,'fa-check':myData.phoneSupprt.active,fa:true}"></i>
-        </span>{{myData.phoneSupprt.phoneSupportAllowed}} Phone Support</li>
-        <li [ngClass]="{'text-muted':!myData.subdomain.active}">
-          <span class="fa-li">
-          <i [ngClass]="{'fa-times':!myData.subdomain.active,'fa-check':myData.subdomain.active,fa:true}"></i>
-        </span>{{myData.subdomain.subdomainAllowed}} Subdomain</li>
-        <li [ngClass]="{'text-muted':!myData.statusReport.active}">
-          <span class="fa-li">
-          <i [ngClass]="{'fa-times':!myData.statusReport.active,'fa-check':myData.statusReport.active,fa:true}"></i>
-        </span>{{myData.statusReport.reportPeriod}} Status Reports</li>
-      </ul>
-      <div class="d-grid">
-        <a href="#" class="btn btn-primary text-uppercase">Button</a>
-      </div>
-    </div>
-  </div>
+
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">{{myData.planTitle}}</h5>
+              <h6 class="card-price text-center">${{myData.price}}<span class="period">/{{myData.period}}</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li [ngClass]="{'text-muted':!myData.user.active}">
+                  <span class="fa-li">
+                  <i [ngClass]="{'fa-times':!myData.user.active,'fa-check':myData.user.active,fa:true}"></i>
+                </span>{{myData.user.userAllowed}}</li>
+                <li [ngClass]="{'text-muted':!myData.storage.active}">
+                  <span class="fa-li">
+                  <i [ngClass]="{'fa-times':!myData.storage.active,'fa-check':myData.storage.active,fa:true}"></i>
+                </span>{{myData.storage.size}}GB Storage</li>
+                <li [ngClass]="{'text-muted':!myData.publicProject.active}">
+                  <span class="fa-li">
+                  <i [ngClass]="{'fa-times':!myData.publicProject.active,'fa-check':myData.publicProject.active,fa:true}"></i>
+                </span>{{myData.publicProject.publicProjectAllowed}} Public Projects</li>
+                <li [ngClass]="{'text-muted':!myData.communityAccess.active}">
+                  <span class="fa-li">
+                  <i [ngClass]="{'fa-times':!myData.communityAccess.active,'fa-check':myData.communityAccess.active,fa:true}"></i>
+                  </span>{{myData.communityAccess.communityAccess}}</li>
+                <li [ngClass]="{'text-muted':!myData.UnlimitedPrivateProject.active,'text-decoration-line-through':!myData.UnlimitedPrivateProject.active}" >
+                    <span class="fa-li">
+                    <i [ngClass]="{'fa-times':!myData.UnlimitedPrivateProject.active,'fa-check':myData.UnlimitedPrivateProject.active,fa:true}"></i>
+                    </span>{{myData.UnlimitedPrivateProject.PPAllowed}} Private Projects
+                </li>
+                <li [ngClass]="{'text-muted':!myData.phoneSupprt.active,'text-decoration-line-through':!myData.phoneSupprt.active}">
+                    <span class="fa-li">
+                    <i [ngClass]="{'fa-times':!myData.phoneSupprt.active,'fa-check':myData.phoneSupprt.active,fa:true}"></i>
+                    </span>{{myData.phoneSupprt.phoneSupportAllowed}} Phone Support
+                </li>
+                <li [ngClass]="{'text-muted':!myData.subdomain.active,'text-decoration-line-through':!myData.subdomain.active}">
+                    <span class="fa-li">
+                    <i [ngClass]="{'fa-times':!myData.subdomain.active,'fa-check':myData.subdomain.active,fa:true}"></i>
+                    </span>{{myData.subdomain.Allowed}} Subdomain
+                </li>
+                <li [ngClass]="{'text-muted':!myData.statusReport.active,'text-decoration-line-through':!myData.statusReport.active}">
+                    <span class="fa-li">
+                    <i [ngClass]="{'fa-times':!myData.statusReport.active,'fa-check':myData.statusReport.active,fa:true}"></i>
+                    </span>{{myData.statusReport.report}} Status Reports
+                </li>
+              </ul>
+              <div class="d-grid">
+                <a href="#" class="btn btn-primary ">Button</a>
+              </div>
+            </div>
+          </div>
+  

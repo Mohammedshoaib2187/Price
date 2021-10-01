@@ -28,18 +28,18 @@ export class CardComponent implements OnInit {
       },
       UnlimitedPrivateProject:{
         PPAllowed:"Unlimited",
-        active:true
+        active:false
       },
       phoneSupprt:{
         phoneSupportAllowed:"Dedicated",
-        active:true
+        active:false
       },
       subdomain:{
-        subdomainAllowed:"Free",
-        active:true
+        Allowed:"Free",
+        active:false
       },
       statusReport:{
-        reportPeriod:"Monthly",
+        report:"Monthly",
         active:false
       }
   };

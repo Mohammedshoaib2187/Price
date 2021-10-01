@@ -38,11 +38,11 @@ export class AppComponent {
         active:false
       },
       subdomain:{
-        subdomainAllowed:"Free",
+        Allowed:"Free",
         active:false
       },
       statusReport:{
-        reportPeriod:"Monthly",
+        report:"Monthly",
         active:false
       }
     },
@@ -75,11 +75,11 @@ export class AppComponent {
         active:true
       },
       subdomain:{
-        subdomainAllowed:"Free",
+        Allowed:"Free",
         active:true
       },
       statusReport:{
-        reportPeriod:"Monthly",
+        report:"Monthly",
         active:false
       }
 
@@ -113,11 +113,11 @@ export class AppComponent {
         active:true
       },
       subdomain:{
-        subdomainAllowed:"Free",
+        Allowed:"Unlimited Free",
         active:true
       },
       statusReport:{
-        reportPeriod:"Monthly",
+        report:"Monthly",
         active:true
       }
 

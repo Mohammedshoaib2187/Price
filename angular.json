@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "1b9afcf2-cb48-4902-a9d8-1bc51d3eeba6"
+    "analytics": "9b3900ba-23b9-4125-84b0-e48a4eb287d7"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "priceCard": {
+    "pricecard": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/priceCard",
+            "outputPath": "dist/pricecard",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -30,8 +30,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              "src/styles.css"
+              
+              
             ],
             "scripts": []
           },
@@ -72,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "priceCard:build:production"
+              "browserTarget": "pricecard:build:production"
             },
             "development": {
-              "browserTarget": "priceCard:build:development"
+              "browserTarget": "pricecard:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "priceCard:build"
+            "browserTarget": "pricecard:build"
           }
         },
         "test": {
@@ -106,5 +109,5 @@
       }
     }
   },
-  "defaultProject": "priceCard"
+  "defaultProject": "pricecard"
 }
